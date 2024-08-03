@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/Card.jsx';
+import MoreDetails from './components/MoreDetails.jsx';
+import Input from './components/Input.jsx';
+import Button from './components/Button.jsx';
+import { useWeather } from './context/WeatherContext.jsx';
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  const weather = useWeather();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1> Weather Forecaster </h1>
+      <div className='input-area'>
+        <Input />
+        <Button onClick={weather.fetchData} value="Search"/>
+      </div>
+      <Card /> 
+      <MoreDetails />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

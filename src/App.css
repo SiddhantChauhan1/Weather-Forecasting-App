@@ -1,38 +1,115 @@
-.App {
+body{
+  color: white;
+  background: url(nigga.jpg);
+  background-size: cover;
   text-align: center;
+  font-family: helvetica;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-area {
+  width: 54vw;
+  display: flex;
+  margin-top: 6vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-field {
+  height: 4vh;
+  width: 42vw;
+  background-color:rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  border-radius: 7px;
+  color: white;
+  padding-left: 1vw;;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  background-color:rgba(255, 255, 255, 0.2);
+  width: 10vw;
+  color: white;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color:rgba(255, 255, 255, 1);
+  color: #030728;
+  border: 1px solid transparent;
+}
+
+
+.card {
+  /* background-color:rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff; */
+  margin-left: 42%;
+  transform: translate(-50%);
+  width: 35vw;
+  height: 30vh;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-temp{
+  font-size: 4.5vh; 
+}
+
+.card-loc{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-loc h5{
+  margin-top: -10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img img{
+  margin-top: 5vh;
+  height: 22vh;
+}
+
+.more-card {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 53vw;
+  height: 32vh;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 15px;
+}
+
+.more-card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.sub-element{
+  display: grid;
+  margin: 30px;
+}
+.sub-element-tag {
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.4);
+}
+.sub-element-value {
+  font-size: 4vh;
+  font-weight: bold;
 }
