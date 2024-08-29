@@ -1,4 +1,4 @@
-Weather Forecasting App
+Weather Forecasting Web App
 
 Created using
 HTML,
