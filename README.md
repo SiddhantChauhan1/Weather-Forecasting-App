@@ -2,7 +2,7 @@
 <BODY>
   <H1> Weather Forecasting App </H1>
   <P>Web Application which allows user to input any city and returns the weather details like temperature, humidity, precipitation, pressure, etc of that city/region.</P>
-  <H2>Created using: </H2>
+  <H3>Created using: </H3>
   <UL>
     <LI>HTML</LI>
     <LI>CSS</LI>
